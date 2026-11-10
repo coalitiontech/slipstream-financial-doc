@@ -1,45 +1,25 @@
 # Homepage
-The homepage is the main page of the website. It is the first page that the user sees when they visit the website.
 
-## Hero Banner
+## Open the homepage
 
+Check **Settings → Reading** to identify the page assigned as the homepage, then open it under **Pages**.
 
-The Hero Banner Carousel is using the built-in BigCommerce Home Page Carousel.
-Please follow the <a href="https://support.bigcommerce.com/s/article/Carousel?language=en_US" target="_blank">BigCommerce documentation</a> to see how to manage it.
-Please note that the styles are in the theme and should not be changed unless you are confident in your abilities.
+The theme supports editable ACF homepage blocks. It also has a fallback layout rendered from theme defaults when homepage block content is absent. If the editor is empty but the front end shows sections, ask the developer to populate the editable blocks before making content changes.
 
-## Featured Products
+## Available homepage sections
 
+| Section | Main content fields |
+| --- | --- |
+| Homepage Hero | Label above headline, headline, subcopy, background, form title/subtitle, Gravity Form ID, service cards |
+| Stats Bar | Metrics |
+| Services Grid | Headline and cards |
+| Operations Features | Headline, copy and features |
+| Mission Tabs | Headline and tabs |
+| Finley CTA | Headline, copy, button label/URL, background and Finley image |
+| Industries Carousel | Headline, copy and cards |
+| Nexus Platform | Label, headline, lead, body, image and checklist |
+| Video Spotlight | Label, headline, copy, video file/URL and poster image |
 
-The Featured Products panel displays products that you have marked as Featured.
-To mark a product as Featured, simply go to the product listing via Products->View, then click on the star symbol on the product you want to display.
+Select the existing block in List View and edit its fields. Keep the established section order unless a layout change is intended. Some empty fields display theme defaults, so clearing a value may not remove it from the page.
 
-![featured-inst.png](img/featured-inst.png)
-
-## Full Banner
-
-
-The full Banner is made using a BigCommerce widget. You can change it in the [Page Builder](index.md/#page-builder).
-
-You can change the text by clicking on it
-
-
-
-You can toggle the visibility, add more slides, change the image, and more by clicking on the options on the left side.
-Please note that due to the custom design of the theme, some options may not work as expected.
-
-
-
-## Small Banner
-
-
-This is the custom widget called 'cta'. You need to select the style CTA to display the style like this one.
-
-
-
-## Logo List
-
-
-This is the custom widget called 'logos'. You can add multiple logos, delete, duplicate, rearrange, and more.
-
-
+The hero’s form title and subtitle belong to the block; form inputs and submission settings belong to [Gravity Forms](forms.md).

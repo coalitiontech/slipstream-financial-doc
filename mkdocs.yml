@@ -1,12 +1,13 @@
-site_name: Project - CT
+site_name: Slipstream Financial Documentation
+site_description: A practical WordPress editing guide for Slipstream Financial.
 nav:
-  - General: index.md
-  - Home: home.md
-  - Category: category.md
-  - Product: product.md
-  - Static: static.md
-  - Mega Menu: menu.md
-  - Other: other.md
+  - Getting started: index.md
+  - Homepage: home.md
+  - Editing pages: pages.md
+  - Blog and resources: blog.md
+  - Header, footer and menus: menu.md
+  - Forms: forms.md
+  - Developer handoff: developers.md
 theme: readthedocs
 extra_css:
   - style.css

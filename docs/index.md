@@ -1,39 +1,26 @@
-# Welcome to PROJECT theme by Coalition Technologies documentation
+# Slipstream Financial documentation
 
-## Developers info
+A practical starting guide for maintaining the Slipstream Financial WordPress website.
 
-* Base theme: Cornerstone 6.14.0
-* Node: 18.15.0
-* Command: stencil start
+## Where to make changes
 
-## Project pages designed
-* [Homepage](home/)
-* [Category Page](category/)
-* [Product Page](product/)
-* [Static Page](static/)
-* [Mega Menu](menu/)
+| What you want to update | WordPress location |
+| --- | --- |
+| Homepage and page sections | Pages → select the page → Edit |
+| Articles, categories and featured images | Posts |
+| Images and uploaded files | Media → Library |
+| Header, footer and default inner-page hero | Appearance → Customize |
+| Navigation links | Appearance → Menus |
+| Lead form fields and messages | Forms (Gravity Forms) |
 
-## Page Builder
-Page Builder allows you to customize the different style elements of your theme, like colors, text sizes, the number of featured products to show on the homepage, and more. You can use this to tailor your storefront so it more closely reflects your brand.
+## Before you start
 
-In addition, you can drag and drop content onto pages, like text blocks, images, videos, banners, carousels, buttons, and blocks of custom HTML. This enables you to showcase your products in a way that is visually rich.
+Sign in at your website’s `/wp-admin/` address using your assigned account. Available menus depend on your permissions.
 
-To access Page Builder go to Storefront › Themes › Customize to launch Page Builder. You can also read more about the Page builder in this <a href="https://support.bigcommerce.com/s/article/Page-Builder?language=en_US#using" target="_blank">documentation</a>.
+This site uses a custom theme with ACF Pro blocks in the WordPress block editor. Select a section in **List View** to locate its fields. Preview your changes, check the page on desktop and mobile, then use **Update**, **Save** or **Publish**, as shown in your editor.
 
-![page-builder.png](img/page-builder.png)
+Start with [Editing pages](pages.md), [Homepage](home.md), or [Header, footer and menus](menu.md).
 
-Whenever we need to edit the site, we need to be in 'Design' mode. And whenever we need to test the site, we need to be in 'Preview' mode. You can also test on different screen sizes by clicking on the icons at the top of the Page Builder.
+## About this guide
 
-![design-preview.png](img/design-preview.png)
-
-While editing the widgets in Design mode, sometimes they seem to break, but this is because the scripts stop running. If this happens, you can fix it by clicking on 'Save' in the top right corner of the Page Builder.
-
-After clicking on 'Save', you can click on 'Preview' to see the changes in action. If you want to see the changes on the live site, you need to click on 'Publish'.
-
-![discard-publish.png](img/discard-publish.png)
-
-## Custom Widgets
-Custom widgets are developed by Coalition Technologies according to the mockups.
-
-They can be used in the Page Builder. You can find them in the Page Builder under the Custom Widgets section.
-![custom-widgets.png](img/custom-widgets.png)
+This base was checked against the local theme source on November 10, 2026. It covers implemented controls and templates. Live page assignments, form IDs and plugin activation still need confirmation in WordPress; they were not verified through the local database. Detailed walkthroughs and current screenshots can be added by the development team.
