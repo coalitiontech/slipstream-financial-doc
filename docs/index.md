@@ -23,4 +23,4 @@ Start with [Editing pages](pages.md), [Homepage](home.md), or [Header, footer an
 
 ## About this guide
 
-This base was checked against the local theme source on November 10, 2026. It covers implemented controls and templates. Live page assignments, form IDs and plugin activation still need confirmation in WordPress; they were not verified through the local database. Detailed walkthroughs and current screenshots can be added by the development team.
+This base was checked against the local theme source on November 10, 2026. It covers implemented controls and templates. Basic custom-block editing was also verified in the local WordPress admin; see the illustrated example in [Editing pages](pages.md). Production page assignments, form IDs and plugin configuration still need confirmation. Detailed walkthroughs and current screenshots can be added by the development team.
