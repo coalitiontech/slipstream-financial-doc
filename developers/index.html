@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Developer handoff - Slipstream Financial Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Developer handoff";
+        var mkdocs_page_input_path = "developers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Slipstream Financial Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Getting started</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../home/">Homepage</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pages/">Editing pages</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../blog/">Blog and resources</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../menu/">Header, footer and menus</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../forms/">Forms</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Developer handoff</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#verified-source-structure">Verified source structure</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#brand-palette">Brand palette</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#extend-this-documentation">Extend this documentation</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Slipstream Financial Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Developer handoff</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="developer-handoff">Developer handoff</h1>
+<h2 id="verified-source-structure">Verified source structure</h2>
+<p>Theme directory: <code>wp-content/themes/slipstream-financial-wp/</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>front-page.php</code></td>
+<td>Homepage block content or fallback section composition</td>
+</tr>
+<tr>
+<td><code>blocks/&lt;slug&gt;/</code></td>
+<td>Block metadata, rendering, styles and optional scripts</td>
+</tr>
+<tr>
+<td><code>acf-json/</code></td>
+<td>ACF field definitions</td>
+</tr>
+<tr>
+<td><code>inc/customizer.php</code></td>
+<td>Header, footer and inner-page defaults</td>
+</tr>
+<tr>
+<td><code>inc/setup.php</code></td>
+<td>Menu locations and theme support</td>
+</tr>
+<tr>
+<td><code>inc/blog.php</code></td>
+<td>Blog composition</td>
+</tr>
+<tr>
+<td><code>page-templates/inner-page.php</code></td>
+<td>Inner Page template</td>
+</tr>
+<tr>
+<td><code>page-templates/resources.php</code></td>
+<td>Resources listing template</td>
+</tr>
+<tr>
+<td><code>assets/css/tokens.css</code></td>
+<td>Shared brand colors and typography</td>
+</tr>
+</tbody>
+</table>
+<p>This is a classic PHP theme using ACF Pro Gutenberg blocks. Header/footer settings use the WordPress Customizer. Form sections integrate with Gravity Forms. Read the theme’s <code>AGENTS.md</code> and conventions before changing code.</p>
+<h2 id="brand-palette">Brand palette</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep ink / footer</td>
+<td><code>#0d0326</code></td>
+</tr>
+<tr>
+<td>Primary purple</td>
+<td><code>#a42eff</code></td>
+</tr>
+<tr>
+<td>Soft purple</td>
+<td><code>#ab3aff</code></td>
+</tr>
+<tr>
+<td>Deep purple</td>
+<td><code>#7829b3</code></td>
+</tr>
+<tr>
+<td>Cyan accent</td>
+<td><code>#64fff0</code></td>
+</tr>
+<tr>
+<td>White</td>
+<td><code>#ffffff</code></td>
+</tr>
+</tbody>
+</table>
+<p>The documentation uses deep purple for readable links on white, with dark navigation and cyan highlights.</p>
+<h2 id="extend-this-documentation">Extend this documentation</h2>
+<ul>
+<li>Confirm active theme/plugins, page URLs, template assignments and navigation assignments in WordPress.</li>
+<li>Add field-by-field walkthroughs for the actual pages and blocks in use.</li>
+<li>Confirm form IDs, notifications and integrations.</li>
+<li>Add current WordPress screenshots with sensitive information removed.</li>
+<li>Document deployment, backups, caching and any SEO tooling after verifying the actual setup.</li>
+</ul>
+<p>Keep this guide focused on editing the site. Label unverified behavior and unfinished sections clearly. Theme seed scripts and design proposals are not proof of current live content.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../forms/" class="btn btn-neutral float-left" title="Forms"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../forms/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

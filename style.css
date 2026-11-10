@@ -1,0 +1,26 @@
+/* Brand values from the Slipstream theme assets/css/tokens.css. */
+:root {
+    --brand-ink: #0d0326;
+    --brand-purple: #a42eff;
+    --brand-purple-deep: #7829b3;
+    --brand-cyan: #64fff0;
+    --brand-muted: #bfc5d2;
+}
+.wy-nav-side, .wy-side-nav-search, .wy-nav-top { background: var(--brand-ink); }
+.wy-side-nav-search { border-bottom: 3px solid var(--brand-purple); }
+.wy-side-nav-search > a, .wy-nav-top a { color: #fff; }
+.wy-side-nav-search input[type=text] { border-color: var(--brand-purple); }
+.wy-menu-vertical a { color: #e8e4ef; }
+.wy-menu-vertical a:hover { background: var(--brand-purple-deep); color: #fff; }
+.wy-menu-vertical li.toctree-l1.current > a { background: var(--brand-cyan); color: var(--brand-ink); border: 0; }
+.wy-menu-vertical li.current ul { background: #f1edf7; }
+.wy-menu-vertical li.current a { color: var(--brand-ink); }
+.wy-menu-vertical li.current a:hover { background: #e3d7f0; }
+.wy-nav-content { max-width: 1000px; }
+.wy-nav-content a { color: var(--brand-purple-deep); }
+.wy-nav-content a:hover { text-decoration: underline; }
+h1, h2, h3 { color: var(--brand-ink); }
+.rst-content h1 { border-bottom: 3px solid var(--brand-purple); padding-bottom: 16px; }
+.rst-content table.docutils th { background: #f1edf7; color: var(--brand-ink); }
+.rst-versions, .rst-versions .rst-current-version { background: var(--brand-ink); color: var(--brand-cyan); }
+a:focus-visible, input:focus-visible { outline: 3px solid var(--brand-purple); outline-offset: 3px; }
