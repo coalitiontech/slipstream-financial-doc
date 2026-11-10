@@ -1,22 +1,20 @@
-# Slipstream Financial documentation
+# Documentation Template
 
-A small MkDocs guide for the custom WordPress site. Edit the Markdown files in `docs/`; navigation is in `mkdocs.yml` and brand styling in `docs/style.css`.
+Welcome to the project documentation template! This template is designed to help you effectively document your projects using MkDocs, a static site generator that’s geared towards project documentation.
 
-## Local preview
+## Getting Started
 
-```sh
-python3 -m pip install -r requirements.txt
-mkdocs serve
-```
+1. Installation: Ensure you have MkDocs installed, following this <a href="https://www.mkdocs.org/user-guide/installation/" target="_blank">guide</a>. You can install it via pip:
+   `pip install mkdocs`
 
-## Build and check
+2. On this repository, click on 'Use this template', then 'Create a new repository'.
 
-```sh
-mkdocs build --strict
-```
+3. Clone the new repo into your computer and open the root folder in your IDE.
 
-The generated output is in `site/`. Rebuild it whenever the source changes. No publishing is performed by the build command.
+4. Use the following command to run the MkDocs development server:
+   `mkdocs serve`
 
-## Scope
+5. Once the changes are ready, you can deploy using the command:
+   `mkdocs gh-deploy`
 
-The base covers page editing, homepage sections, blog/resources, Customizer settings, menus and Gravity Forms integration. Facts are drawn from the local theme implementation. Database-dependent details still need verification. See `docs/developers.md` for the handoff checklist.
+6. To visit the page available online, go to your GitHub repository, then go to Settings->Pages and you should see the link. If it's not working, make sure your repository is set as public and that the branch selected for the live page is gh-pages.
