@@ -20,7 +20,7 @@ Prioritize practical instructions for a nontechnical site editor:
 1. Identify the real homepage, content pages, Resources/blog pages and their templates. Explain which content comes from blocks, posts, Customizer settings or theme defaults.
 2. Add short walkthroughs for the blocks actually used: locating the block in List View, editing its named fields, updating images/buttons/repeater rows, previewing and saving. Do not document every unused starter block just because it exists in the code.
 3. Verify header/footer controls and menu locations, then document how to maintain them.
-4. Confirm the forms actually used and explain field editing, confirmations, notifications and testing. Do not expose private recipient addresses, entries, credentials or license keys.
+4. Confirm the forms actually used and explain field editing, confirmations, notifications and testing. Do not expose custom login URLs, private recipient addresses, entries, credentials or license keys. Direct readers to the Coalition Technologies project team for login access.
 5. Add verified project-specific notes for blog categories, featured images and resource listings. Include maintenance/deployment details only when confirmed and relevant.
 
 Use actual field labels and page names. Never treat seed scripts, sample pages, PHP fallback content or design proposals as proof of production configuration. The existing Finley CTA screenshots show an unpublished demonstration page, not production page content. Do not turn that example into a published page.

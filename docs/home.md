@@ -22,7 +22,7 @@ Keep this order unless a deliberate layout change is planned. Verified on the lo
 8. Nexus Platform
 9. Video Spotlight
 
-![Home page List View with Homepage Hero selected and its fields in the sidebar](img/02-home-list-view.png)
+For an illustrated example of selecting blocks and opening their fields, see [Basic block editing](pages.md#basic-block-editing-illustrated-example).
 
 ## Available homepage sections
 

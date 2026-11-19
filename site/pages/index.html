@@ -55,6 +55,12 @@
     <li class="toctree-l2"><a class="reference internal" href="#templates">Templates</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#solution-page-sections">Solution page sections</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#edit-the-banking-treasury-hero">Edit the Banking &amp; Treasury hero</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#content-blocks-below-the-hero">Content blocks below the hero</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#images-and-links">Images and links</a>
     </li>
@@ -126,7 +132,19 @@
 <p><strong>Resources</strong> renders the theme’s blog hero and post listing. Its layout is composed by the theme; editing the page body does not control that listing. The local <strong>Resources</strong> page is currently trashed — the public posts listing is the <strong>Blog</strong> page under <strong>Settings → Reading</strong>. Confirm whether a Resources page should be restored on production.</p>
 <p>Avoid changing an existing page’s template without checking the preview.</p>
 <h2 id="solution-page-sections">Solution page sections</h2>
-<p>Typical solution-page blocks (documented for Banking &amp; Treasury in the theme, and present on the local <strong>Modern Banking &amp; Treasury Solutions</strong> / <code>banking-treasury</code> page):</p>
+<p>The local <strong>Modern Banking &amp; Treasury Solutions</strong> (<code>banking-treasury</code>) page uses the <strong>Inner Page</strong> template. Its hero is rendered by the template above the content blocks; it is not a Solution Hero block in List View. This was confirmed against the active theme and the local page’s saved template and block content on November 19, 2026.</p>
+<h3 id="edit-the-banking-treasury-hero">Edit the Banking &amp; Treasury hero</h3>
+<ol>
+<li>Open the page under <strong>Pages → All Pages</strong> and keep its <strong>Inner Page</strong> template selected.</li>
+<li>Edit the page <strong>Title</strong> for the default headline, or use <strong>Inner Page Hero → Headline override</strong>.</li>
+<li>Edit the page <strong>Excerpt</strong> for the hero description.</li>
+<li>In <strong>Inner Page Hero</strong>, edit <strong>Label above headline</strong>, <strong>Button</strong> and <strong>Background</strong> as needed. These are page-level fields, not a content block.</li>
+<li>Change the page’s <strong>Featured image</strong> for the hero’s side image. The background falls back from the page’s <strong>Background</strong> field to its featured image, then the Customizer/theme default.</li>
+<li>Preview and save the page.</li>
+</ol>
+<p>Do not add a <strong>Solution Hero</strong> block to this page: the Inner Page template already renders its hero, so a separate hero block would create a second banner. The standalone Solution Hero block remains available for other layouts that require it.</p>
+<h3 id="content-blocks-below-the-hero">Content blocks below the hero</h3>
+<p>The saved Banking &amp; Treasury page contains these blocks:</p>
 <table>
 <thead>
 <tr>
@@ -135,10 +153,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Solution Hero</td>
-<td>Label above headline, headline, copy, CTA, side image, background <em>(often supplied by the Inner Page hero instead)</em></td>
-</tr>
 <tr>
 <td>Logos Strip</td>
 <td>Headline, intro; logos (image, alt, URL); marquee toggle</td>

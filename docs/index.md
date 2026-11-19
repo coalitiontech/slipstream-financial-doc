@@ -15,7 +15,7 @@ A practical starting guide for maintaining the Slipstream Financial WordPress we
 
 ## Before you start
 
-Sign in at [https://www.slipstreamfinancial.com/slipstream-access/](https://www.slipstreamfinancial.com/slipstream-access/) using your assigned account. Available menus depend on your permissions.
+To request the website’s login URL or account access, contact your Coalition Technologies project team. Once you receive access, sign in using your assigned account. Available menus depend on your permissions.
 
 This site uses a custom theme with ACF Pro blocks in the WordPress block editor. Select a section in **List View** to locate its fields. Preview your changes, check the page on desktop and mobile, then use **Update**, **Save** or **Publish**, as shown in your editor.
 

@@ -20,11 +20,25 @@ Avoid changing an existing page’s template without checking the preview.
 
 ## Solution page sections
 
-Typical solution-page blocks (documented for Banking & Treasury in the theme, and present on the local **Modern Banking & Treasury Solutions** / `banking-treasury` page):
+The local **Modern Banking & Treasury Solutions** (`banking-treasury`) page uses the **Inner Page** template. Its hero is rendered by the template above the content blocks; it is not a Solution Hero block in List View. This was confirmed against the active theme and the local page’s saved template and block content on November 19, 2026.
+
+### Edit the Banking & Treasury hero
+
+1. Open the page under **Pages → All Pages** and keep its **Inner Page** template selected.
+2. Edit the page **Title** for the default headline, or use **Inner Page Hero → Headline override**.
+3. Edit the page **Excerpt** for the hero description.
+4. In **Inner Page Hero**, edit **Label above headline**, **Button** and **Background** as needed. These are page-level fields, not a content block.
+5. Change the page’s **Featured image** for the hero’s side image. The background falls back from the page’s **Background** field to its featured image, then the Customizer/theme default.
+6. Preview and save the page.
+
+Do not add a **Solution Hero** block to this page: the Inner Page template already renders its hero, so a separate hero block would create a second banner. The standalone Solution Hero block remains available for other layouts that require it.
+
+### Content blocks below the hero
+
+The saved Banking & Treasury page contains these blocks:
 
 | Section | Main fields |
 | --- | --- |
-| Solution Hero | Label above headline, headline, copy, CTA, side image, background *(often supplied by the Inner Page hero instead)* |
 | Logos Strip | Headline, intro; logos (image, alt, URL); marquee toggle |
 | Process Steps | Headline, copy; steps (tag, title, copy, image) |
 | Video Copy Split | Headline, intro, body; checklist; poster; video file or URL; play label |

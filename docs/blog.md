@@ -26,7 +26,9 @@ Listing behavior from the theme:
 
 Open **Appearance → Customize → Blog Hero** to edit the label above the headline, headline, intro and optional background used on the posts index. Category archives use the category name and description instead of those Customizer copy fields. On the local site the label above the headline is set to **Knowledge Base**.
 
-![Customizer showing Blog Hero among Header, Footer and Inner Pages](img/11-customize-blog-hero.png)
+The Customizer overview below shows where to find **Blog Hero**. Open that section to see its editable fields.
+
+![Customizer overview showing the Blog Hero section](img/11-customize-blog-hero.png)
 
 ## Resources template
 

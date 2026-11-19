@@ -9,7 +9,9 @@ Open **Appearance → Customize → Header**. Available settings include:
 - Header email link.
 - Phone display text and phone link.
 
-![Customizer with Header, Footer, Inner Pages and Blog Hero sections](img/06-customize-header.png)
+The overview below shows the available sections. Select **Header** to open the controls described above.
+
+![Customizer overview with Header, Footer, Inner Pages and Blog Hero sections](img/06-customize-header.png)
 
 Update the visible phone number and its `tel:` link together. The email link uses a `mailto:` address. Do not publish private addresses in this documentation repository; maintain them only in Customizer.
 
