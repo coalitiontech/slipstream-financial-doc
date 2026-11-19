@@ -9,6 +9,25 @@
 .wy-nav-side, .wy-side-nav-search, .wy-nav-top { background: var(--brand-ink); }
 .wy-side-nav-search { border-bottom: 3px solid var(--brand-purple); }
 .wy-side-nav-search > a, .wy-nav-top a { color: #fff; }
+.wy-side-nav-search > a { padding: 8px 6px; }
+.wy-side-nav-search > a img.logo {
+    display: block;
+    width: min(200px, 100%);
+    height: auto;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 0;
+}
+.wy-nav-top .site-logo-link {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+}
+.wy-nav-top .site-logo-link img.logo {
+    display: block;
+    height: 28px;
+    width: auto;
+}
 .wy-side-nav-search input[type=text] { border-color: var(--brand-purple); }
 .wy-menu-vertical a { color: #e8e4ef; }
 .wy-menu-vertical a:hover { background: var(--brand-purple-deep); color: #fff; }

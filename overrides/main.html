@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{%- block mobile_nav %}
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="{{ nav.homepage.url|url }}" class="site-logo-link" aria-label="{{ config.site_name }}">
+    <img src="{{ config.theme.logo|url }}" class="logo" alt="{{ config.site_name }}"/>
+  </a>
+{%- endblock %}

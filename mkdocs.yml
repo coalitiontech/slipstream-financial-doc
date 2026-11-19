@@ -12,5 +12,6 @@ nav:
 theme:
   name: readthedocs
   custom_dir: overrides
+  logo: img/logo.svg
 extra_css:
   - style.css
