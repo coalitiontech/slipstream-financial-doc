@@ -49,7 +49,13 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#open-the-homepage">Open the homepage</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-order">Section order</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#available-homepage-sections">Available homepage sections</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#editing-a-section">Editing a section</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homepage-form">Homepage form</a>
     </li>
     </ul>
                 </li>
@@ -100,7 +106,22 @@
                 <h1 id="homepage">Homepage</h1>
 <h2 id="open-the-homepage">Open the homepage</h2>
 <p>Check <strong>Settings → Reading</strong> to identify the page assigned as the homepage, then open it under <strong>Pages</strong>.</p>
-<p>The theme supports editable ACF homepage blocks. It also has a fallback layout rendered from theme defaults when homepage block content is absent. If the editor is empty but the front end shows sections, ask the developer to populate the editable blocks before making content changes.</p>
+<p><img alt="Reading settings showing the static homepage and posts page" src="../img/01-reading-settings.png" /></p>
+<p>In the local admin this is the published page titled <strong>Home</strong>. The theme supports editable ACF homepage blocks. It also has a fallback layout rendered from theme defaults when homepage block content is absent. If the editor is empty but the front end shows sections, ask the developer to populate the editable blocks before making content changes.</p>
+<h2 id="section-order">Section order</h2>
+<p>Keep this order unless a deliberate layout change is planned. Verified on the local <strong>Home</strong> page:</p>
+<ol>
+<li>Homepage Hero</li>
+<li>Stats Bar</li>
+<li>Services Grid</li>
+<li>Operations Features</li>
+<li>Mission Tabs</li>
+<li>Finley CTA</li>
+<li>Industries Carousel</li>
+<li>Nexus Platform</li>
+<li>Video Spotlight</li>
+</ol>
+<p><img alt="Home page List View with Homepage Hero selected and its fields in the sidebar" src="../img/02-home-list-view.png" /></p>
 <h2 id="available-homepage-sections">Available homepage sections</h2>
 <table>
 <thead>
@@ -112,44 +133,54 @@
 <tbody>
 <tr>
 <td>Homepage Hero</td>
-<td>Label above headline, headline, subcopy, background, form title/subtitle, Gravity Form ID, service cards</td>
+<td>Label above headline, headline, subcopy, background, form title/subtitle, Gravity Form ID, optional form shortcode, service cards (label, icon)</td>
 </tr>
 <tr>
 <td>Stats Bar</td>
-<td>Metrics</td>
+<td>Metrics (value, label)</td>
 </tr>
 <tr>
 <td>Services Grid</td>
-<td>Headline and cards</td>
+<td>Headline; cards (title, copy, CTA label/URL, image, wide card, panel position)</td>
 </tr>
 <tr>
 <td>Operations Features</td>
-<td>Headline, copy and features</td>
+<td>Headline, copy, columns; features (title, copy, icon)</td>
 </tr>
 <tr>
 <td>Mission Tabs</td>
-<td>Headline and tabs</td>
+<td>Headline; tabs (tab label, panel title, copy, CTA label/URL, image); tags</td>
 </tr>
 <tr>
 <td>Finley CTA</td>
-<td>Headline, copy, button label/URL, background and Finley image</td>
+<td>Headline, copy, dense layout, button label/URL, banner background, Finley image</td>
 </tr>
 <tr>
 <td>Industries Carousel</td>
-<td>Headline, copy and cards</td>
+<td>Headline, copy; cards (title, URL, image)</td>
 </tr>
 <tr>
 <td>Nexus Platform</td>
-<td>Label, headline, lead, body, image and checklist</td>
+<td>Label above headline, headline, lead, body, image; checklist items</td>
 </tr>
 <tr>
 <td>Video Spotlight</td>
-<td>Label, headline, copy, video file/URL and poster image</td>
+<td>Label above headline, headline, copy, video file or URL, poster image</td>
 </tr>
 </tbody>
 </table>
-<p>Select the existing block in List View and edit its fields. Keep the established section order unless a layout change is intended. Some empty fields display theme defaults, so clearing a value may not remove it from the page.</p>
-<p>The hero’s form title and subtitle belong to the block; form inputs and submission settings belong to <a href="../forms/">Gravity Forms</a>.</p>
+<h2 id="editing-a-section">Editing a section</h2>
+<ol>
+<li>Open <strong>Home</strong> and use <strong>List View</strong> (Document Overview).</li>
+<li>Select the existing block — do not insert a second copy of the same section.</li>
+<li>Edit fields in the <strong>Block</strong> sidebar, or use <strong>Open Expanded Editor</strong> for longer fields and images.</li>
+<li>For repeaters (cards, metrics, tabs, checklist rows), edit existing rows first; preview after adding, removing or reordering.</li>
+<li>Preserve <code>&lt;span&gt;</code> or <code>&lt;strong&gt;</code> tags inside headlines when they mark highlighted words.</li>
+<li>Preview on desktop and mobile, then save/update the page.</li>
+</ol>
+<p>Some empty fields still display theme fallback images or structure, so clearing a value may not remove every visual element from the page.</p>
+<h2 id="homepage-form">Homepage form</h2>
+<p>The hero’s form title and subtitle belong to the <strong>Homepage Hero</strong> block. Form inputs, required rules, confirmations and notifications belong to <a href="../forms/">Gravity Forms</a>. On the local site the block’s <strong>Gravity Form ID</strong> points to form <strong>1 — Homepage Hero</strong>.</p>
               
             </div>
           </div><footer>
@@ -161,10 +192,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- Copyright etc -->
+      <p>© Coalition Technologies</p>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>

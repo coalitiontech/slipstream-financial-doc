@@ -1,5 +1,6 @@
 site_name: Slipstream Financial Documentation
 site_description: A practical WordPress editing guide for Slipstream Financial.
+copyright: © Coalition Technologies
 nav:
   - Getting started: index.md
   - Homepage: home.md
@@ -8,6 +9,8 @@ nav:
   - Header, footer and menus: menu.md
   - Forms: forms.md
   - Developer handoff: developers.md
-theme: readthedocs
+theme:
+  name: readthedocs
+  custom_dir: overrides
 extra_css:
   - style.css

@@ -47,6 +47,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#before-you-start">Before you start</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#site-map-at-a-glance">Site map at a glance</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#about-this-guide">About this guide</a>
     </li>
     </ul>
@@ -123,7 +125,7 @@
 <td>Media → Library</td>
 </tr>
 <tr>
-<td>Header, footer and default inner-page hero</td>
+<td>Header, footer, blog hero defaults and inner-page hero</td>
 <td>Appearance → Customize</td>
 </tr>
 <tr>
@@ -140,8 +142,42 @@
 <p>Sign in at your website’s <code>/wp-admin/</code> address using your assigned account. Available menus depend on your permissions.</p>
 <p>This site uses a custom theme with ACF Pro blocks in the WordPress block editor. Select a section in <strong>List View</strong> to locate its fields. Preview your changes, check the page on desktop and mobile, then use <strong>Update</strong>, <strong>Save</strong> or <strong>Publish</strong>, as shown in your editor.</p>
 <p>Start with <a href="pages/">Editing pages</a>, <a href="home/">Homepage</a>, or <a href="menu/">Header, footer and menus</a>.</p>
+<h2 id="site-map-at-a-glance">Site map at a glance</h2>
+<p>Verified against the local WordPress admin (November 19, 2026):</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>How it is set up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage</td>
+<td><strong>Settings → Reading</strong> → static front page <strong>Home</strong></td>
+</tr>
+<tr>
+<td>Blog listing</td>
+<td>Posts page <strong>Blog</strong> (<code>/blog/</code>), layout from the theme</td>
+</tr>
+<tr>
+<td>Solution / marketing pages</td>
+<td>Mostly the <strong>Inner Page</strong> template + ACF blocks</td>
+</tr>
+<tr>
+<td>Lead / contact pages</td>
+<td><strong>Contact Lead</strong> block + Gravity Forms</td>
+</tr>
+<tr>
+<td>Header / footer chrome</td>
+<td><strong>Appearance → Customize</strong> (not page blocks)</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Reading settings: homepage set to Home, posts page set to Blog" src="img/01-reading-settings.png" /></p>
+<p>Production URLs and any staging-only pages still need a final check on the live site. See <a href="developers/">Developer handoff</a>.</p>
 <h2 id="about-this-guide">About this guide</h2>
-<p>This base was checked against the local theme source on November 10, 2026. It covers implemented controls and templates. Basic custom-block editing was also verified in the local WordPress admin; see the illustrated example in <a href="pages/">Editing pages</a>. Production page assignments, form IDs and plugin configuration still need confirmation. Detailed walkthroughs and current screenshots can be added by the development team.</p>
+<p>This base was checked against the local theme source on November 10, 2026, and extended from theme source plus the local WordPress admin on November 19, 2026. Screenshots were captured from the local admin with account menus and private fields obscured where needed. It covers implemented controls and templates. Production hosting, notification recipients and plugin licensing still need confirmation by the team. Do not store credentials, private email addresses or license keys in this public repository.</p>
               
             </div>
           </div><footer>
@@ -152,10 +188,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- Copyright etc -->
+      <p>© Coalition Technologies</p>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>
@@ -190,5 +224,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-11-10 15:27:02.943287+00:00
+Build Date UTC : 2026-11-19 18:35:52.152355+00:00
 -->

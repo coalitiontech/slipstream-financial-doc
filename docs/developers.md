@@ -9,7 +9,7 @@ Theme directory: `wp-content/themes/slipstream-financial-wp/`.
 | `front-page.php` | Homepage block content or fallback section composition |
 | `blocks/<slug>/` | Block metadata, rendering, styles and optional scripts |
 | `acf-json/` | ACF field definitions |
-| `inc/customizer.php` | Header, footer and inner-page defaults |
+| `inc/customizer.php` | Header, footer, blog hero and inner-page defaults |
 | `inc/setup.php` | Menu locations and theme support |
 | `inc/blog.php` | Blog composition |
 | `page-templates/inner-page.php` | Inner Page template |
@@ -31,12 +31,28 @@ This is a classic PHP theme using ACF Pro Gutenberg blocks. Header/footer settin
 
 The documentation uses deep purple for readable links on white, with dark navigation and cyan highlights.
 
+## Verification log
+
+| Item | Status |
+| --- | --- |
+| Theme paths, Customizer controls, menu locations, block field labels | Verified from theme source |
+| Homepage section order on page **Home** | Verified in local admin + List View screenshot |
+| Posts page **Blog**, category **News**, Blog Hero label “Knowledge Base” | Verified in local admin |
+| Gravity Forms **1 Homepage Hero** and **2 Contact Lead** (+ field labels) | Verified in local admin |
+| Menu location → menu assignments | Verified in local admin |
+| Editor screenshots in `docs/img/` | Captured from local admin (Nov 19, 2026); private fields obscured |
+| Production URLs, hosting, caching, SEO plugins | Not verified here |
+| GF notification recipients / delivery | Intentionally omitted (private); confirm in WP admin |
+| Whether **Resources** should be restored vs using **Blog** | Needs production decision |
+
+## Public-repo safety
+
+Do not add credentials, license keys, private email addresses, notification recipients, Local MySQL sockets, `wp-config` values or submission data to this repository. Prefer field names and admin paths over secrets.
+
 ## Extend this documentation
 
-- Confirm active theme/plugins, page URLs, template assignments and navigation assignments in WordPress.
-- Add field-by-field walkthroughs for the actual pages and blocks in use.
-- Confirm form IDs, notifications and integrations.
-- Add current WordPress screenshots with sensitive information removed.
-- Document deployment, backups, caching and any SEO tooling after verifying the actual setup.
+- Confirm active theme/plugins, page URLs, template assignments and navigation on production.
+- Replace local screenshots with production captures when the live admin differs, cropping browser chrome and removing sensitive information.
+- Document deployment, backups, caching and SEO tooling only after verifying the actual setup.
 
-Keep this guide focused on editing the site. Label unverified behavior and unfinished sections clearly. Theme seed scripts and design proposals are not proof of current live content.
+Keep this guide focused on editing the site. Label unverified behavior clearly. Theme seed scripts and design proposals are not proof of current live content.

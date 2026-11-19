@@ -6,19 +6,45 @@
 4. For lists such as cards, logos or steps, edit the existing repeater rows. Preview after adding, removing or reordering rows.
 5. Preview links, images and spacing, then save the page.
 
+![Pages screen listing published Slipstream pages](img/03-pages-all.png)
+
 ## Templates
 
 **Inner Page** adds a hero above the page content. It uses the page title, excerpt and featured image, with an **Inner Page Hero** field group for the label, headline override, button and background. The Customizer’s **Inner Pages** section supplies a fallback hero background and compact hero height.
 
-**Resources** renders the theme’s blog hero and post listing. Its layout is composed by the theme; editing the page body does not control that listing.
+Most solution, about, contact and lead pages in the local admin use **Inner Page**.
+
+**Resources** renders the theme’s blog hero and post listing. Its layout is composed by the theme; editing the page body does not control that listing. The local **Resources** page is currently trashed — the public posts listing is the **Blog** page under **Settings → Reading**. Confirm whether a Resources page should be restored on production.
 
 Avoid changing an existing page’s template without checking the preview.
 
 ## Solution page sections
 
-The theme includes Solution Hero, Logos Strip, Process Steps, Video Copy Split, Trust Image Cards, Platform Tags Split, Feature Duo and Finley CTA blocks. These are the section family documented for Banking & Treasury in the theme source. Actual page placement should be confirmed in the editor.
+Typical solution-page blocks (documented for Banking & Treasury in the theme, and present on the local **Modern Banking & Treasury Solutions** / `banking-treasury` page):
 
-Other available sections include **Team Grid** (headline, intro and members) and **Contact Lead** (copy, bullets, form heading and Gravity Form ID).
+| Section | Main fields |
+| --- | --- |
+| Solution Hero | Label above headline, headline, copy, CTA, side image, background *(often supplied by the Inner Page hero instead)* |
+| Logos Strip | Headline, intro; logos (image, alt, URL); marquee toggle |
+| Process Steps | Headline, copy; steps (tag, title, copy, image) |
+| Video Copy Split | Headline, intro, body; checklist; poster; video file or URL; play label |
+| Trust Image Cards | Headline, copy; cards (image, title, copy) |
+| Platform Tags Split | Label above headline, headline, media, card title, tags, card copy |
+| Feature Duo | Headline, copy; features (icon, title, copy); side image |
+| Finley CTA | Same fields as on the homepage |
+
+![Banking & Treasury page editor showing logos strip, process heading, Inner Page template and featured image](img/04-banking-editor.png)
+
+Local `banking-treasury` body stack (below the Inner Page hero): Logos Strip → Process Steps → Video Copy Split → Trust Image Cards → Platform Tags Split → Feature Duo → Finley CTA.
+
+Other useful sections:
+
+- **Team Grid** — headline, intro, members (photo, name, role, bio)
+- **Contact Lead** — headline, intro, list intro, bullets, body, form title/subtitle, Gravity Form ID
+
+Lead-style pages such as **Talk with a Fintech & Payments Expert** and **See SlipStream in Action** combine process/content blocks with **Contact Lead**. Prefer editing the existing **Contact Lead** block rather than adding another form block.
+
+![Contact Us page with Contact Lead copy, checklist and form card](img/13-contact-editor.png)
 
 ## Images and links
 
@@ -26,7 +52,7 @@ Choose images through the Media Library and provide useful alternative text for 
 
 ## Basic block editing: illustrated example
 
-These screenshots show the local Slipstream WordPress admin using an unpublished demonstration page and the real **Finley CTA** block. Placeholder text is for demonstration only.
+These screenshots show the local Slipstream WordPress admin using an unpublished demonstration page and the real **Finley CTA** block. Placeholder text is for demonstration only. They are not a published production page.
 
 ### 1. Choose a custom block
 
