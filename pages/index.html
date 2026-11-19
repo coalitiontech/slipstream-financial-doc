@@ -31,7 +31,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Slipstream Financial Documentation
+          <a href="..">
+          <img src="../img/logo.svg" class="logo" alt="Logo"/>
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -54,6 +55,12 @@
     <li class="toctree-l2"><a class="reference internal" href="#templates">Templates</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#solution-page-sections">Solution page sections</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#edit-the-banking-treasury-hero">Edit the Banking &amp; Treasury hero</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#content-blocks-below-the-hero">Content blocks below the hero</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#images-and-links">Images and links</a>
     </li>
@@ -92,9 +99,10 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Slipstream Financial Documentation</a>
-        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href=".." class="site-logo-link" aria-label="Slipstream Financial Documentation">
+    <img src="../img/logo.svg" class="logo" alt="Slipstream Financial Documentation"/>
+  </a>
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
@@ -117,17 +125,77 @@
 <li>For lists such as cards, logos or steps, edit the existing repeater rows. Preview after adding, removing or reordering rows.</li>
 <li>Preview links, images and spacing, then save the page.</li>
 </ol>
+<p><img alt="Pages screen listing published Slipstream pages" src="../img/03-pages-all.png" /></p>
 <h2 id="templates">Templates</h2>
 <p><strong>Inner Page</strong> adds a hero above the page content. It uses the page title, excerpt and featured image, with an <strong>Inner Page Hero</strong> field group for the label, headline override, button and background. The Customizer’s <strong>Inner Pages</strong> section supplies a fallback hero background and compact hero height.</p>
-<p><strong>Resources</strong> renders the theme’s blog hero and post listing. Its layout is composed by the theme; editing the page body does not control that listing.</p>
+<p>Most solution, about, contact and lead pages in the local admin use <strong>Inner Page</strong>.</p>
+<p><strong>Resources</strong> renders the theme’s blog hero and post listing. Its layout is composed by the theme; editing the page body does not control that listing. The local <strong>Resources</strong> page is currently trashed — the public posts listing is the <strong>Blog</strong> page under <strong>Settings → Reading</strong>. Confirm whether a Resources page should be restored on production.</p>
 <p>Avoid changing an existing page’s template without checking the preview.</p>
 <h2 id="solution-page-sections">Solution page sections</h2>
-<p>The theme includes Solution Hero, Logos Strip, Process Steps, Video Copy Split, Trust Image Cards, Platform Tags Split, Feature Duo and Finley CTA blocks. These are the section family documented for Banking &amp; Treasury in the theme source. Actual page placement should be confirmed in the editor.</p>
-<p>Other available sections include <strong>Team Grid</strong> (headline, intro and members) and <strong>Contact Lead</strong> (copy, bullets, form heading and Gravity Form ID).</p>
+<p>The local <strong>Modern Banking &amp; Treasury Solutions</strong> (<code>banking-treasury</code>) page uses the <strong>Inner Page</strong> template. Its hero is rendered by the template above the content blocks; it is not a Solution Hero block in List View. This was confirmed against the active theme and the local page’s saved template and block content on November 19, 2026.</p>
+<h3 id="edit-the-banking-treasury-hero">Edit the Banking &amp; Treasury hero</h3>
+<ol>
+<li>Open the page under <strong>Pages → All Pages</strong> and keep its <strong>Inner Page</strong> template selected.</li>
+<li>Edit the page <strong>Title</strong> for the default headline, or use <strong>Inner Page Hero → Headline override</strong>.</li>
+<li>Edit the page <strong>Excerpt</strong> for the hero description.</li>
+<li>In <strong>Inner Page Hero</strong>, edit <strong>Label above headline</strong>, <strong>Button</strong> and <strong>Background</strong> as needed. These are page-level fields, not a content block.</li>
+<li>Change the page’s <strong>Featured image</strong> for the hero’s side image. The background falls back from the page’s <strong>Background</strong> field to its featured image, then the Customizer/theme default.</li>
+<li>Preview and save the page.</li>
+</ol>
+<p>Do not add a <strong>Solution Hero</strong> block to this page: the Inner Page template already renders its hero, so a separate hero block would create a second banner. The standalone Solution Hero block remains available for other layouts that require it.</p>
+<h3 id="content-blocks-below-the-hero">Content blocks below the hero</h3>
+<p>The saved Banking &amp; Treasury page contains these blocks:</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Main fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logos Strip</td>
+<td>Headline, intro; logos (image, alt, URL); marquee toggle</td>
+</tr>
+<tr>
+<td>Process Steps</td>
+<td>Headline, copy; steps (tag, title, copy, image)</td>
+</tr>
+<tr>
+<td>Video Copy Split</td>
+<td>Headline, intro, body; checklist; poster; video file or URL; play label</td>
+</tr>
+<tr>
+<td>Trust Image Cards</td>
+<td>Headline, copy; cards (image, title, copy)</td>
+</tr>
+<tr>
+<td>Platform Tags Split</td>
+<td>Label above headline, headline, media, card title, tags, card copy</td>
+</tr>
+<tr>
+<td>Feature Duo</td>
+<td>Headline, copy; features (icon, title, copy); side image</td>
+</tr>
+<tr>
+<td>Finley CTA</td>
+<td>Same fields as on the homepage</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Banking &amp; Treasury page editor showing logos strip, process heading, Inner Page template and featured image" src="../img/04-banking-editor.png" /></p>
+<p>Local <code>banking-treasury</code> body stack (below the Inner Page hero): Logos Strip → Process Steps → Video Copy Split → Trust Image Cards → Platform Tags Split → Feature Duo → Finley CTA.</p>
+<p>Other useful sections:</p>
+<ul>
+<li><strong>Team Grid</strong> — headline, intro, members (photo, name, role, bio)</li>
+<li><strong>Contact Lead</strong> — headline, intro, list intro, bullets, body, form title/subtitle, Gravity Form ID</li>
+</ul>
+<p>Lead-style pages such as <strong>Talk with a Fintech &amp; Payments Expert</strong> and <strong>See SlipStream in Action</strong> combine process/content blocks with <strong>Contact Lead</strong>. Prefer editing the existing <strong>Contact Lead</strong> block rather than adding another form block.</p>
+<p><img alt="Contact Us page with Contact Lead copy, checklist and form card" src="../img/13-contact-editor.png" /></p>
 <h2 id="images-and-links">Images and links</h2>
 <p>Choose images through the Media Library and provide useful alternative text for meaningful images. Check button labels and destinations together. Preserve existing headline formatting when editing fields labeled “HTML allowed”; it may control the highlighted words.</p>
 <h2 id="basic-block-editing-illustrated-example">Basic block editing: illustrated example</h2>
-<p>These screenshots show the local Slipstream WordPress admin using an unpublished demonstration page and the real <strong>Finley CTA</strong> block. Placeholder text is for demonstration only.</p>
+<p>These screenshots show the local Slipstream WordPress admin using an unpublished demonstration page and the real <strong>Finley CTA</strong> block. Placeholder text is for demonstration only. They are not a published production page.</p>
 <h3 id="1-choose-a-custom-block">1. Choose a custom block</h3>
 <p>Use the <strong>+ Block Inserter</strong> in the top toolbar. Custom blocks appear under <strong>CT Theme</strong>; search by name or choose <strong>Finley CTA</strong>. On an existing page, select its existing block instead of adding a duplicate.</p>
 <p><img alt="WordPress block inserter showing the Slipstream CT Theme blocks" src="../img/wp-block-inserter.png" /></p>
@@ -149,10 +217,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- Copyright etc -->
+      <p>© Coalition Technologies</p>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>

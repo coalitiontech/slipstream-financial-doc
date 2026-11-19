@@ -31,7 +31,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Slipstream Financial Documentation
+          <a href="..">
+          <img src="../img/logo.svg" class="logo" alt="Logo"/>
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -63,6 +64,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#footer">Footer</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#inner-page-and-blog-defaults">Inner page and blog defaults</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#navigation">Navigation</a>
     </li>
     </ul>
@@ -82,9 +85,10 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Slipstream Financial Documentation</a>
-        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href=".." class="site-logo-link" aria-label="Slipstream Financial Documentation">
+    <img src="../img/logo.svg" class="logo" alt="Slipstream Financial Documentation"/>
+  </a>
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
@@ -108,40 +112,69 @@
 <li>Header email link.</li>
 <li>Phone display text and phone link.</li>
 </ul>
-<p>Update the visible phone number and its <code>tel:</code> link together. The email link uses a <code>mailto:</code> address.</p>
+<p>The overview below shows the available sections. Select <strong>Header</strong> to open the controls described above.</p>
+<p><img alt="Customizer overview with Header, Footer, Inner Pages and Blog Hero sections" src="../img/06-customize-header.png" /></p>
+<p>Update the visible phone number and its <code>tel:</code> link together. The email link uses a <code>mailto:</code> address. Do not publish private addresses in this documentation repository; maintain them only in Customizer.</p>
 <h2 id="footer">Footer</h2>
 <p>Open <strong>Appearance → Customize → Footer</strong> to edit the about/blurb text, primary and secondary CTA labels/URLs, support email, sales email and copyright line. The theme also uses shared logo and phone settings.</p>
-<p>Preview the result and use <strong>Publish</strong> to save Customizer changes.</p>
+<p>On the local site the primary footer CTA points at the Request a Demo page and the secondary CTA at Talk to a Specialist. Preview the result and use <strong>Publish</strong> to save Customizer changes.</p>
+<h2 id="inner-page-and-blog-defaults">Inner page and blog defaults</h2>
+<p>Also in <strong>Appearance → Customize</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>What editors change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inner Pages</td>
+<td>Fallback hero background and compact hero minimum height</td>
+</tr>
+<tr>
+<td>Blog Hero</td>
+<td>Label above headline, headline, intro and optional background for the posts index</td>
+</tr>
+</tbody>
+</table>
 <h2 id="navigation">Navigation</h2>
-<p>Open <strong>Appearance → Menus</strong>, choose the menu and edit its links. Drag child items beneath their parent to create dropdown items, then save.</p>
-<p>The theme registers these menu locations:</p>
+<p>Open <strong>Appearance → Menus</strong>, choose the menu and edit its links. Drag child items beneath their parent to create dropdown items, then save. Menu items may also have an optional <strong>Menu icon</strong> (Media Library image) used in mega-menu dropdowns.</p>
+<p><img alt="Menus screen for editing navigation links" src="../img/07-menus.png" /></p>
+<p>The theme registers these menu locations. Local admin assignments:</p>
 <table>
 <thead>
 <tr>
 <th>Location</th>
 <th>Purpose</th>
+<th>Local menu</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Primary Menu</td>
 <td>Header navigation</td>
+<td>Primary</td>
 </tr>
 <tr>
 <td>Footer — Knowledge Base</td>
 <td>Footer knowledge links</td>
+<td>Footer — Knowledge Base</td>
 </tr>
 <tr>
 <td>Footer — Payment Solutions</td>
 <td>Footer solution links</td>
+<td>Footer — Payment Solutions</td>
 </tr>
 <tr>
 <td>Footer — Legal</td>
 <td>Footer legal links</td>
+<td>Footer — Legal</td>
 </tr>
 <tr>
 <td>Footer Menu (legacy)</td>
 <td>Compatibility location; confirm usage before assigning</td>
+<td>Unassigned locally</td>
 </tr>
 </tbody>
 </table>
@@ -157,10 +190,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- Copyright etc -->
+      <p>© Coalition Technologies</p>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>

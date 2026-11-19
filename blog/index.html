@@ -31,7 +31,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Slipstream Financial Documentation
+          <a href="..">
+          <img src="../img/logo.svg" class="logo" alt="Logo"/>
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -59,6 +60,10 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#listings-and-categories">Listings and categories</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#blog-hero-defaults">Blog hero defaults</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#resources-template">Resources template</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -80,9 +85,10 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Slipstream Financial Documentation</a>
-        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href=".." class="site-logo-link" aria-label="Slipstream Financial Documentation">
+    <img src="../img/logo.svg" class="logo" alt="Slipstream Financial Documentation"/>
+  </a>
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
@@ -100,11 +106,25 @@
                 <h1 id="blog-and-resources">Blog and resources</h1>
 <h2 id="edit-an-article">Edit an article</h2>
 <p>Go to <strong>Posts → All Posts</strong> and select an article, or choose <strong>Add New</strong>. Maintain the title, body, categories, excerpt and featured image, then preview and save.</p>
+<p><img alt="Posts list in WordPress admin" src="../img/05-posts-list.png" /></p>
 <p>The theme renders the article header and content through its single-post template. A <strong>Blog Inline CTA</strong> block is available for a call to action inside an article, with a headline, CTA label, CTA URL and background image.</p>
 <h2 id="listings-and-categories">Listings and categories</h2>
-<p>The posts page is selected under <strong>Settings → Reading → Posts page</strong>. The theme supplies the blog hero and listing layout. Category archives use the same layout family, filtered to the category. Manage categories through <strong>Posts → Categories</strong> and assign them in each post’s settings.</p>
-<p>The <strong>Resources</strong> page template also renders the blog layout. Listing cards draw from WordPress posts; they are not individual cards edited in the page body. Related articles on post pages are selected by the theme using categories.</p>
-<p>Developer follow-up: confirm the assigned posts page, category labels, featured-post behavior and any remaining sample content against the current database.</p>
+<p>The posts page is selected under <strong>Settings → Reading → Posts page</strong>. In the local admin this is the published <strong>Blog</strong> page. The theme supplies the blog hero and listing layout (you do not edit those listing cards inside the page body).</p>
+<p>Category archives use the same layout family, filtered to the category. Manage categories through <strong>Posts → Categories</strong> and assign them in each post’s settings. The local site’s active article category is <strong>News</strong>.</p>
+<p><img alt="Categories screen showing the News category" src="../img/10-categories.png" /></p>
+<p>Listing behavior from the theme:</p>
+<ul>
+<li>About six posts per page on the blog index and archives</li>
+<li>Featured images appear on listing cards and in the single-post hero (theme fallbacks apply when an image is missing)</li>
+<li>Related articles on a post page are chosen by category</li>
+</ul>
+<h2 id="blog-hero-defaults">Blog hero defaults</h2>
+<p>Open <strong>Appearance → Customize → Blog Hero</strong> to edit the label above the headline, headline, intro and optional background used on the posts index. Category archives use the category name and description instead of those Customizer copy fields. On the local site the label above the headline is set to <strong>Knowledge Base</strong>.</p>
+<p>The Customizer overview below shows where to find <strong>Blog Hero</strong>. Open that section to see its editable fields.</p>
+<p><img alt="Customizer overview showing the Blog Hero section" src="../img/11-customize-blog-hero.png" /></p>
+<h2 id="resources-template">Resources template</h2>
+<p>The <strong>Resources</strong> page template also renders the blog layout. Listing cards still come from WordPress posts. In the local admin the <strong>Resources</strong> page is trashed; confirm on production whether editors should use <strong>Blog</strong>, a restored Resources page, or both.</p>
+<p>Developer follow-up: confirm production posts-page URL, category labels, sticky/featured behavior and removal of any remaining sample content.</p>
               
             </div>
           </div><footer>
@@ -116,10 +136,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- Copyright etc -->
+      <p>© Coalition Technologies</p>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>

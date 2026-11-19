@@ -31,7 +31,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Slipstream Financial Documentation
+          <a href="..">
+          <img src="../img/logo.svg" class="logo" alt="Logo"/>
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -63,7 +64,15 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Forms</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#forms-in-use-local-admin">Forms in use (local admin)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#field-labels-editors-usually-maintain">Field labels editors usually maintain</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#basic-maintenance">Basic maintenance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#confirmations-and-notifications">Confirmations and notifications</a>
     </li>
     </ul>
                 </li>
@@ -78,9 +87,10 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Slipstream Financial Documentation</a>
-        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href=".." class="site-logo-link" aria-label="Slipstream Financial Documentation">
+    <img src="../img/logo.svg" class="logo" alt="Slipstream Financial Documentation"/>
+  </a>
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
@@ -97,6 +107,36 @@
               
                 <h1 id="forms">Forms</h1>
 <p>The Homepage Hero and Contact Lead blocks integrate with <strong>Gravity Forms</strong>. Each has a <strong>Gravity Form ID</strong> field. The homepage hero also exposes an optional form-shortcode field; ask the developer to confirm its use before replacing an existing setup.</p>
+<h2 id="forms-in-use-local-admin">Forms in use (local admin)</h2>
+<p>Verified in the local WordPress admin (November 19, 2026). Confirm the same IDs on production before relying on them there.</p>
+<table>
+<thead>
+<tr>
+<th>Form ID</th>
+<th>Form title</th>
+<th>Typical placement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Homepage Hero</td>
+<td>Homepage Hero block (<strong>Gravity Form ID</strong>)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Contact Lead</td>
+<td>Contact Lead blocks on contact / talk / demo pages</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Gravity Forms list showing Homepage Hero (ID 1) and Contact Lead (ID 2)" src="../img/08-forms-list.png" /></p>
+<p>Theme options mirror those IDs (<code>Homepage Hero</code> → 1, <code>Contact Lead</code> → 2).</p>
+<h3 id="field-labels-editors-usually-maintain">Field labels editors usually maintain</h3>
+<p>Both forms include First Name, Last Name, Email, Company Name and Message. The Contact Lead form also includes a CAPTCHA field. Edit labels, required flags and placeholder text inside Gravity Forms — not inside the page block.</p>
+<p><img alt="Contact Lead form builder with field labels and CAPTCHA" src="../img/09-form-fields.png" /></p>
+<p>Form title/subtitle text that appears above the inputs on the page still comes from the <strong>Homepage Hero</strong> or <strong>Contact Lead</strong> block fields.</p>
+<p><img alt="Contact page showing the Contact Lead block beside the form card" src="../img/13-contact-editor.png" /></p>
 <h2 id="basic-maintenance">Basic maintenance</h2>
 <ol>
 <li>Open <strong>Forms</strong> in WordPress and identify the form used by the page.</li>
@@ -105,7 +145,9 @@
 <li>Save and test the form on the front end, including required-field errors and the confirmation message.</li>
 </ol>
 <p>Form headings in the page block are separate from form input labels. If the form does not render, have the developer verify plugin activation and the selected form ID.</p>
-<p>Developer follow-up: document the actual form names/IDs, notification recipients, delivery setup, integrations and spam protection after checking the current configuration. Do not add credentials or submission data to this guide.</p>
+<h2 id="confirmations-and-notifications">Confirmations and notifications</h2>
+<p>Configure confirmation messages and notification routing inside each form’s Gravity Forms settings. Notification recipient addresses, API keys and spam-service credentials must stay in WordPress admin only — never commit them to this public documentation repo.</p>
+<p>Developer follow-up: confirm production form IDs, notification delivery, integrations and spam protection after checking the live configuration.</p>
               
             </div>
           </div><footer>
@@ -117,10 +159,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- Copyright etc -->
+      <p>© Coalition Technologies</p>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>
